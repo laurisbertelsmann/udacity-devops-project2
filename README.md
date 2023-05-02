@@ -16,5 +16,10 @@
 ## Architectural Diagram
 
 ## Instructions for running the Python project
+to run this project execute following command from the cloud shell folder where your code is located:
+
+az webapp up --name devop-project-webapp --resource-group devops-project-2 --runtime "PYTHON:3.9"
+ 
+ 
 ## A short description of how to improve the project in the future
 ## Screenshots demonstrating key steps
