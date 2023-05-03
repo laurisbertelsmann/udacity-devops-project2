@@ -1,17 +1,21 @@
+[![Python application test with Github Actions](https://github.com/laurisbertelsmann/udacity-devops-project2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/laurisbertelsmann/udacity-devops-project2/actions/workflows/pythonapp.yml)
+
 # Overview
 
-<TODO: complete this with an overview of your project>
+Overview of the project
+This project is part of the Udacity Azure DevOps Nanodegree. In this project, we will build a CI/CD pipeline for a Python-based machine learning application, deploying the application using Azure Pipelines to Azure App Services. We will also create, publish, and consume a pipeline artifact.
 
 ## Project Plan
 <TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* A link to a [Trello board for the project](https://trello.com/b/n4r8Abx5/devops-project-2)
+* A link to a spreadsheet: https://docs.google.com/spreadsheets/d/14l1ZD6s1Z1uvC4zLDvQKN5iocVrHxU8WdQuhBJMaBxM/edit?usp=sharing
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+  
+# Architectural Diagram 
+ ![Diagram](./images/pipline.png)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
