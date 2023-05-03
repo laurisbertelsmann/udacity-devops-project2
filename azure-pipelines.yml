@@ -20,6 +20,14 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'udacityDevopsTraining(5dc66109-21e8-41d0-93b3-688f46cd4c4b)'
+    appType: 'webAppLinux'
+    WebAppName: 'devop-project-webapp'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/starter_files/flask-sklearn/**/*.zip'
+    RuntimeStack: 'PYTHON|3.9'
     python -m pip install --upgrade pip
     pip install -r requirements.txt
   displayName: 'Install dependencies'
