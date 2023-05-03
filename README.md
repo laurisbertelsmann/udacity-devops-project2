@@ -15,33 +15,54 @@ This project is part of the Udacity Azure DevOps Nanodegree. In this project, we
 
   
 # Architectural Diagram 
- ![Diagram](./images/pipeline.png)
+ ![Diagram](./images/pipeline.jpg)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
-* Project running on Azure App Service
+* Clone into Azure Cloud Shell
+```bash
+git clone  https://github.com/laurisbertelsmann/udacity-devops-project2 
+```
+you shold have something like this:
+![clone](./images/git-clone.png)
 
-* Project cloned into Azure Cloud Shell
+Checking tests 
+```bash
+make all
+```
+Output of a test run: 
+![test](./images/make-all-screenshot.png)
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+* To run this web app on Azure App Service
+in azure cloud shell run the following command:
+```bash
+cd udacity-devops-project2 
+az webapp up -n <your-appservice-name> -l <your-region> --sku F1 -g <your-resource-group>
+```
 
-* Output of a test run
+after few minutes you should see a success message with URL of your web app. 
+The web app should look like this:
+![webapp](./images/web-app.png)
+
+you can also check the details of the web app in azure portal under App Services:
+![webapp](./images/web-app-portal.png)
+
+
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
+and 
 * Running Azure App Service from Azure Pipelines automatic deployment
+![pipeline](./images/pipeline-success.png)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
 
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+**before running that script you need to change the URL to your web app URL.**
+![prediction](./images/prediction.png)
 
-* Output of streamed log files from deployed application
-
+* Output of streamed log files from deployed application:
+![logs](./images/log-tail.png)
 > 
 
 ## Enhancements
