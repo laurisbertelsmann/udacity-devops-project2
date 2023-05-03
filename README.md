@@ -15,7 +15,7 @@ This project is part of the Udacity Azure DevOps Nanodegree. In this project, we
 
   
 # Architectural Diagram 
- ![Diagram](./images/pipline.png)
+ ![Diagram](./images/pipeline.png)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
